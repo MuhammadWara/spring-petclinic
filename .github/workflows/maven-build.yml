@@ -27,3 +27,5 @@ jobs:
 
     - name: Run Java Build and Test Action
       uses: MuhammadWara/java-build-test@main  # Replace with the correct reference for your private action
+      with:
+        java-version: '11'
