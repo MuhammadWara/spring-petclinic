@@ -20,7 +20,12 @@ jobs:
     #   run: |
     #     git config --global url."https://$GITHUB_ACTOR:${{ secrets.ACCESS_TOKEN }}@github.com".insteadOf "https://github.com"
 
-    - name: Run Java Build and Test Action
-      uses: MuhammadWara/java-build-test@main  # Replace with the correct reference for your private action
+    - name: Run Java Build Action
+      uses: MuhammadWara/java-build@main  # Replace with the correct reference for your private action
+      with:
+        java-version: '11'
+
+    - name: Run Java Test Action
+      uses: MuhammadWara/java-test@main  # Replace with the correct reference for your private action
       with:
         java-version: '11'
