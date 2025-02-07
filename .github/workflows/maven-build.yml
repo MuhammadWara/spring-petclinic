@@ -21,9 +21,9 @@ jobs:
       with:
         java-version: '11'
 
-    - name: Authenticate with GitHub token
-      run: |
-        git config --global url."https://$GITHUB_ACTOR:${{ secrets.ACCESS_TOKEN }}@github.com".insteadOf "https://github.com"
+    # - name: Authenticate with GitHub token
+    #   run: |
+    #     git config --global url."https://$GITHUB_ACTOR:${{ secrets.ACCESS_TOKEN }}@github.com".insteadOf "https://github.com"
 
     - name: Run Java Build and Test Action
       uses: MuhammadWara/java-build-test@main  # Replace with the correct reference for your private action
