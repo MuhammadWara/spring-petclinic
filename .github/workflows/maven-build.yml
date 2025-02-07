@@ -28,4 +28,4 @@ jobs:
     - name: Run Java Test Action
       uses: MuhammadWara/java-test@main  # Replace with the correct reference for your private action
       with:
-        java-version: '11'
+        java-version: '17'
