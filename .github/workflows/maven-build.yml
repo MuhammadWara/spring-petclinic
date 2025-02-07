@@ -16,11 +16,6 @@ jobs:
     - name: Check out repository
       uses: actions/checkout@v2
 
-    - name: Set up JDK
-      uses: actions/setup-java@v2
-      with:
-        java-version: '11'
-
     # - name: Authenticate with GitHub token
     #   run: |
     #     git config --global url."https://$GITHUB_ACTOR:${{ secrets.ACCESS_TOKEN }}@github.com".insteadOf "https://github.com"
