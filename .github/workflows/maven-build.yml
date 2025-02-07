@@ -26,5 +26,3 @@ jobs:
 
     - name: Run Java Build and Test Action
       uses: MuhammadWara/java-build-test@main  # Replace with the correct repo and version
-      with:
-        java-version: '11'  # You can set the version if needed
